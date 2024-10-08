@@ -3,12 +3,11 @@ import numpy as np
 
 sample_ = 1000
 
-# Количество примеров
-in_ = 10  # Размерность каждого примера
+in_ = 10  
 out_ = 1
 He = [32,128,32]
 h = [in_,*He,out_]
-# Генерация данных
+
 X = np.random.rand(sample_, in_)
 
 Y = np.sin(np.sum(X**2,axis=1)) 
